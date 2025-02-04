@@ -1,0 +1,18 @@
+Übung 7 - Funktionen und Prozeduren
+
+(1.)
+
+Erstellt eine Funktion, die berechnet, ob ein Kurs belegt ist.
+Die Daten befinden sich in der Tabelle 'classes'.
+Als Paramter soll die Abteilung (department) und die Kursnummer (course) übergeben werden können.
+Ab einer Belegung über 80 Prozent gilt der Kurs als Belegt und die Funktion soll TRUE zurückgeben, 
+im anderen Fall FALSE. (current_students, max_students zur Berechnung verwenden).
+
+(2.)
+
+Erstellt eine Prozedur 'AddNewStudent', die einen neuen Studenten in die Tabelle 'students' einträgt.
+Die Prozedur soll drei Parameter erhalten (Vorname, Nachname und Hauptfach), welche in die
+Felder first_name, last_name und major eingetragen werden sollen.
+Die neue ID soll über student_sequence.nextval berechnet werden. current_credits sind mit 0 zu belegen.
+
+

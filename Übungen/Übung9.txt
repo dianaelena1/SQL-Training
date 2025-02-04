@@ -1,0 +1,16 @@
+Übung 9 - Abschluß
+
+Legt bitte zwei Packages an.
+
+Package 1: Verwaltung der Studenten
+    Exception-Handling durch Aufruf der Prozedur in Package 2.
+    Funktion 1: Anlegen eines Studenten mit Name, Vorname und Hauptfach
+                Rückgabe der neuen ID;
+    Prozedur 2: Registrieren des Studenten in allen Kursen, die seinem
+                Hauptfach entsprechen
+
+Package 2: Fehlerhandling
+    Prozedur 1: Speichern einer Fehlermeldung in die Log-Tabelle
+    Funktion 2: Ermittle alle Kurse, die eine Belegung über einen
+                Wert (Paramter!) haben, Rückgabe True, wenn welche gefunden, 
+                sonst False

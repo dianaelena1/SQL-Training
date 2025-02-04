@@ -1,0 +1,79 @@
+Übung 5 - Fehlerbehandlung
+
+(1.)
+
+Abfangen auf Grund von Standard Exceptions
+
+Im Folgenden anonymen Block werden vier Inserts ausgeführt.
+Für zwei oder drei Fehler existieren Standard Fehlermeldungen, für eine nicht.
+Bitte fangt die Fehler ab und gebt einen eigenen Text und die Error-Message aus.
+
+BEGIN
+   INSERT INTO STUDENTS
+               (id
+              , first_name
+              , last_name)
+        VALUES (20000
+              , 'John'
+              , 'Smith');
+
+   INSERT INTO STUDENTS
+               (id
+              , first_name
+              , last_name)
+        VALUES (20000
+              , 'Susan'
+              , 'Ryan');
+
+   INSERT INTO STUDENTS
+               (id
+              , first_name
+              , last_name)
+        VALUES ('A1'
+              , 'Susan'
+              , 'Ryan');
+
+   INSERT INTO STUDENTS
+               (id
+              , first_name
+              , last_name)
+        VALUES (2001
+              , 'Susan Peggy Amanda Lisa'
+              , 'Bryce');
+END;
+/
+
+
+(2.)
+
+User Defined Exceptions
+
+Definiert eine Exception, die anspringt, wenn es mehr Anmeldungen für den History Kurs 101 gibt als Plätze.
+Fangt nun diese Exception beim Select ab.
+Speichert in diesem Fall eine Fehlermeldung in das Infofeld der Tabelle 'log_table'. 
+
+DECLARE
+   -- Current number of students registered for HIS-101
+   v_currentstudents NUMBER(3);
+   -- Maximum number of students allowed in HIS-101
+   v_maxstudents NUMBER(3);
+BEGIN
+   -- set new count of current students
+   UPDATE CLASSES
+      SET current_students = 35
+    WHERE department = 'HIS'
+      AND course = 101;
+
+   /* Find the current number of registered students, and the maximum
+    number of students allowed. */
+   SELECT current_students
+        , max_students
+     INTO v_currentstudents
+        , v_maxstudents
+     FROM CLASSES
+    WHERE department = 'HIS'
+      AND course = 101;
+END;
+/
+
+

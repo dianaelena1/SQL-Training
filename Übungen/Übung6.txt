@@ -1,0 +1,21 @@
+Übung 6 - PL/SQL Tables
+
+(1.)
+
+Baut eine PL/SQL Tabelle auf, die der Struktur der Tabelle 'students' entspricht.
+Nutzt dazu den Rowtype.
+Lest den Datensatz 10001 der Tabelle 'students' in die PL/SQL Tabelle ein.
+Und gebt nun der Vornamen und Nachnamen des Studenten aus.
+
+(2.)
+
+Baut eine PL/SQL Tabelle auf, in der Ihr Zahlen (Number) abspeichern könnt.
+Füllt diese mit den Werten 10, 20, 30, ..., 100.
+Löscht nun den Eintrag mit dem Index 5.
+Durchlauft die Tabelle ein zweites mal und gebt die Werte aus.
+(Achtet darauf, das ihr mögliche Fehler abfangt.)
+
+(3.)
+
+Schreibt ein Update, welches in der Tabelle students alle Fächer mit 
+dem Titel History in Geschichte umschreibt und gebt die geänderten IDs aus.

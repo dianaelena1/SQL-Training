@@ -1,0 +1,33 @@
+Übung 3 - Ablaufsteuerung
+
+(1.)
+
+IF ... THEN ... ELSE
+
+Unterscheide die Räume in der Tabelle rooms nach Besprechungsraum (<100 Sitze) und Konferenzsaal.
+Ermittle das Ergebnis in einem anonymen Block für den Raum 20001 und gebe es aus.
+Nutze dazu folgendes Select:
+  SELECT number_seats INTO anzahl 
+    FROM rooms
+   WHERE room_id = 20001;
+
+(2.)
+
+CASE
+
+Bilde einen anonymen Block und deklariere eine Variable vom Typ INTEGER.
+Belege diese Zahl gleich mit 1 vor.
+Erstelle eine CASE-Anweisung, die mögliche Belegungen von 1 bis 5 in Text umwandelt:
+1 - Eins
+2 - Zwei
+3 - Drei
+4 - Vier
+5 - Fünf
+
+(3.)
+
+Durchlaufe alle Zahlen von 1 bis 20 und gebe jede Zahl aus.
+Zusätzlich gib einen Kommentar (' - Ganzzahlig - ') aus, wenn die Zahl durch 2 teilbar ist.
+(Test am Besten auf Modulo -> MOD(lauf_var,2) = 0)
+Ist die Zahl durch 4 teilbar, so gebe bitte zusätzlich einen weiteren Kommentar aus.
+

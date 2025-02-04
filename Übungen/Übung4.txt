@@ -1,0 +1,38 @@
+Übung 4 - SQL und Cursor
+
+(1.)
+
+Nutzung von SELECT ... INTO
+
+Selektiert Euch bitte den Titel und die vier Autoren aus der Tabelle "books" in einen Record-Typ.
+Gebt bitte die Daten für das Buch mit der Katalognummer 1002 aus.
+Benutzt dazu SELECT ... INTO.
+
+
+(2.)
+
+OPEN ... FETCH ... CLOSE
+
+Selektiert aus der Tabelle "rooms" die room_id und die description zeilenweise
+und und speichert diese in die Tabelle "temp_table". Zählt die Datensätze mit und
+gebt je Zeile die Datensatznummer und die Gesamtanzahl aus.
+Nutzt dazu explizite Cursor mit OPEN, FETCH und Close.
+Das Commit soll am Schluß erfolgen.
+
+
+(3.)
+
+CURSOR und FOR ... LOOP
+
+Definiert einen Cursor, der alle Kurse und die maximalen Studenten aus der Tabelle 
+classes selektiert.
+Als Paramter soll der Cursor das Department erhalten können.
+
+Nutzt nun den Cursor in einer For Loop für die Abteilung 'MUS'
+
+
+Erweiterung von (1.) -> Workshop SUBSTR und INSTR
+
+Als Kurzbezweichnung werden die ersten 3 Bytes des ersten Titelwortes (sofern da keine Leerzeichen sind) verknüpt mit ID ausgegeben.
+Alle Bücher ausgeben mit nur den Nachnamen (1. Name) der Autoren
+
